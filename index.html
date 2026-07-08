@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>苏州古典园林 — UNESCO 世界文化遗产</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <header class="navbar">
+    <div class="nav-inner">
+      <a href="#/" class="nav-brand" aria-label="返回首页">
+        <span class="brand-seal" aria-hidden="true">园</span>
+        <span class="brand-text">苏州古典园林</span>
+      </a>
+      <span class="nav-tag">UNESCO 世界文化遗产</span>
+    </div>
+  </header>
+
+  <!-- 首页视图 -->
+  <main id="home-view" class="view active">
+    <!-- Hero 区 -->
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="hero-kicker">UNESCO World Heritage Site 813</p>
+        <h1 class="hero-title">苏州古典园林</h1>
+        <p class="hero-subtitle">咫尺之内，再造乾坤</p>
+        <p class="hero-desc">
+          在苏州，园林不是自然的复制，而是文人把山水、诗意与生活折叠进一方庭院。
+          九座古典园林共同构成世界遗产“苏州古典园林”，展现中国私家园林的成熟范式。
+        </p>
+        <div class="hero-facts" aria-label="世界遗产关键信息">
+          <span><strong>9</strong> 座典型园林</span>
+          <span><strong>1997</strong> 首批列入</span>
+          <span><strong>2000</strong> 扩展列入</span>
+        </div>
+      </div>
+      <div class="hero-photo" aria-label="园林水面、粉墙、山石与树影构成的真实园林图景">
+        <img src="images/yipu.jpg" alt="艺圃水面、山石、粉墙与月洞门相互映照的真实园林景观">
+        <div class="hero-photo-caption">
+          <span>一水一石，皆为心境</span>
+          <small>以小见大 · 借景成境</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- 筛选条 -->
+    <section class="curator-panel" aria-label="策展导览">
+      <p class="curator-label">按审美范式进入园林</p>
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all" aria-pressed="true">全部园林</button>
+        <button class="filter-btn" data-filter="water" aria-pressed="false">水面开合</button>
+        <button class="filter-btn" data-filter="space" aria-pressed="false">空间折叠</button>
+        <button class="filter-btn" data-filter="rock" aria-pressed="false">石中迷境</button>
+        <button class="filter-btn" data-filter="quiet" aria-pressed="false">城市隐逸</button>
+        <button class="filter-btn" data-filter="1997" aria-pressed="false">1997 首批</button>
+        <button class="filter-btn" data-filter="2000" aria-pressed="false">2000 扩展</button>
+      </div>
+    </section>
+
+    <!-- 园林卡片网格 -->
+    <div class="garden-grid" id="garden-grid">
+      <!-- JS 动态渲染 -->
+    </div>
+  </main>
+
+  <!-- 详情视图 -->
+  <main id="detail-view" class="view">
+    <div class="detail-container" id="detail-container">
+      <!-- JS 动态渲染 -->
+    </div>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <p>数据来源：联合国教科文组织世界遗产中心、国家文物局、苏州市园林和绿化管理局</p>
+    <p>苏州古典园林 · Classical Gardens of Suzhou · UNESCO World Heritage Site 813</p>
+  </footer>
+
+  <script src="js/data.js" defer></script>
+  <script src="js/guides.js" defer></script>
+  <script src="js/poetry.js" defer></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>
